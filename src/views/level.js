@@ -12,36 +12,29 @@ import {
   ScrollView,
   TouchableOpacity,
 } from 'react-native';
+import Selector from './selector'
 
 export default class Level extends Component {
     constructor(props){
         super(props);
-        this.state = {isHidden: false};
+        this.state = {
+            isHidden: false,
+            active: false,
+            others: false,
+        };
         this.onPress = this.onPress.bind(this);
     }
+
     onPress(){
         this.setState({isHidden: !this.state.isHidden})
     }
+
     render(){
         return (
             <View style={styles.container}>
             <Text style={styles.textUp}>Pilih level bahasa </Text>
             <Text style={styles.textUp}>Inggrismu </Text>
-            <TouchableOpacity onPress={()=> {}}>
-            <Text style={styles.textscroll} onPress={this.onPressTitle}>Pemula</Text>
-            </TouchableOpacity>
-            <TouchableOpacity onPress={()=> {}}>
-            <Text style={styles.textscroll} onPress={this.onPressTitle}>Dasar</Text>
-            </TouchableOpacity>
-            <TouchableOpacity onPress={()=> {}}>
-            <Text style={styles.textscroll} onPress={this.onPressTitle}>Rata-rata</Text>
-            </TouchableOpacity>
-            <TouchableOpacity onPress={()=> {}}>        
-            <Text style={styles.textscroll} onPress={this.onPressTitle}>Di atas rata-rata</Text>
-            </TouchableOpacity>
-            <TouchableOpacity onPress={()=> {}}>
-            <Text style={styles.textscroll} onPress={this.onPressTitle}>Lanjutan</Text>
-            </TouchableOpacity>
+            <Selector />
             <TouchableOpacity style={styles.button}
                 onPress={() => console.log('aku keluar nih')}>
                 <Text> Berikutnya </Text>
@@ -65,9 +58,14 @@ const styles = StyleSheet.create({
         color: 'white',
         // padding: 20,
     },
-    textscroll: {
+    focus: {
         fontSize : 15,
         color: 'white',
+        padding: 15,  
+    },
+    blur: {
+        fontSize : 15,
+        color: '#E0E0E0',
         padding: 15,  
     },
     button: {
