@@ -4,6 +4,7 @@ import App from './App';
 import FirstScreen from './src/views/firstScreen'
 import Content from './src/views/content'
 import Level  from './src/views/level'
+import NewVocab from './src/views/NewVocab'
 import tryScreen from './src/views/tryScreen'
 class Main extends Component {
     constructor(props){
@@ -22,4 +23,4 @@ class Main extends Component {
 }
 
 
-AppRegistry.registerComponent('V7', () => Level);
+AppRegistry.registerComponent('V7', () => NewVocab);
