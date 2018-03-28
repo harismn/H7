@@ -9,19 +9,26 @@ import {
   Platform,
   StyleSheet,
   Text,
-  View
+  View,
+  TouchableOpacity,
 } from 'react-native';
 
 
 export default class Content extends Component {
 
   render() {
-    return (
+    return ( 
       <View style={styles.container}>
-      <View style={styles.containerTwo}>
       <Text style={styles.textUp}>Hadiah Untuk Anda</Text>
-      </View>
-      <Text style={styles.textStyle}>7</Text>
+      <Text style={styles.textNumber}>7</Text>
+      <Text style={styles.texton}>abad</Text>
+      <Text style={styles.texton}>Gratis!</Text>
+      <TouchableOpacity
+      style={styles.button}
+      onPress={() => this.props.navigation.navigate('Details')}>
+         <Text> Aktifkan </Text>
+       </TouchableOpacity>
+      <Text style={styles.textBottom}> Lewati </Text>
       </View>
     );
   }
@@ -33,21 +40,37 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#FF9500',
+    padding:  20
   },
-  containerTwo: {
-    flex: 1/9,
-    flexDirection: 'column',
-    alignItems: 'center',
-    backgroundColor: 'blue'
-  },
-  textStyle: {
+  textNumber: {
     fontSize: 130,
     fontWeight: 'bold',
     color: 'white',
+    margin: 16,
   },
   textUp: {
     fontSize : 30,
     fontWeight: 'bold',
+    color: 'white',
+
+  },
+  button: {
+    alignItems: 'center',
+    backgroundColor: '#DDDDDD',
+    padding: 10,
+    margin: 10,
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    borderRadius: 10,
+    borderWidth: 1,
+  },
+  texton: {
+    fontSize : 30,
+    fontWeight: 'bold',
+    color: 'white',
+  },
+  textBottom: {
+    fontSize : 15,
     color: 'white',
 
   },

@@ -13,7 +13,13 @@ import {
 } from 'react-native';
 
 
-export default class Screen extends Component {
+export default class FirstScreen extends Component {
+  constructor(props){
+    super(props)
+    this.state = {
+      timer: 0,
+    };
+  }
 
   render() {
     return (
