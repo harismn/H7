@@ -6,6 +6,10 @@ import Content from './src/views/content'
 import Level  from './src/views/level'
 import NewVocab from './src/views/NewVocab'
 import tryScreen from './src/views/tryScreen'
+import SwipeLayer from './src/views/swipes/swipeLayer'
+import Sidebar from './src/views/sidebar'
+
+
 class Main extends Component {
     constructor(props){
         super(props);
@@ -23,4 +27,4 @@ class Main extends Component {
 }
 
 
-AppRegistry.registerComponent('V7', () => NewVocab);
+AppRegistry.registerComponent('V7', () => Sidebar);

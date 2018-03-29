@@ -34,11 +34,12 @@ export default class Level extends Component {
             <View style={styles.container}>
             <Text style={styles.textUp}>Pilih level bahasa </Text>
             <Text style={styles.textUp}>Inggrismu </Text>
-            <Selector />
+            <Selector style={styles.newStyle}/>
             <TouchableOpacity style={styles.button}
                 onPress={() => console.log('aku keluar nih')}>
                 <Text> Berikutnya </Text>
                 </TouchableOpacity>
+                
             </View>
         )
     }
@@ -48,7 +49,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         justifyContent: 'center',
-        alignItems: 'center',
+        alignItems: 'center', 
         backgroundColor: '#FF9500',
         padding:  50
     },
@@ -58,15 +59,9 @@ const styles = StyleSheet.create({
         color: 'white',
         // padding: 20,
     },
-    focus: {
-        fontSize : 15,
-        color: 'white',
-        padding: 15,  
-    },
-    blur: {
-        fontSize : 15,
-        color: '#E0E0E0',
-        padding: 15,  
+    newStyle: {
+        justifyContent: 'center',
+        alignItems: 'center'
     },
     button: {
         alignItems: 'center',
