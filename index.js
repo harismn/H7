@@ -8,6 +8,7 @@ import NewVocab from './src/views/NewVocab'
 import tryScreen from './src/views/tryScreen'
 import SwipeLayer from './src/views/swipes/swipeLayer'
 import Sidebar from './src/views/sidebar'
+import Tinder from './src/views/tinder/tinder'
 
 
 class Main extends Component {
@@ -27,4 +28,4 @@ class Main extends Component {
 }
 
 
-AppRegistry.registerComponent('V7', () => Sidebar);
+AppRegistry.registerComponent('V7', () => Tinder);
