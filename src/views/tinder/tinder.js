@@ -13,17 +13,28 @@ import {
   Button
 } from 'react-native';
 import Swiper from 'react-native-deck-swiper'
+import Card1 from '../tinder/card1'
+import Card2 from  '../tinder/card2'
+import Card3 from '../tinder/card3'
+import Card4 from '../tinder/card4'
+import Card5 from '../tinder/card5'
+import Card6 from '../tinder/card6'
+import Card7 from '../tinder/card7'
 
+const card1 = <Card1 />
+const card2 = <Card2 />
+const card3 = <Card3 />
+const card4 = <Card4 />
+const card5 = <Card5 />
+const card6 = <Card6 />
+const card7 = <Card7 />
 
-const card1 = <Text>card 1</Text>
-const card2 = <Text>card 2</Text>
-const card3 = <Text>card 3</Text>
 
 export default class Tinder extends Component {
     constructor (props) {
         super(props)
         this.state = {
-          cards: ['1', '2', '3'],
+          cards: ['1', '2', '3', '4','5','6','7'],
           swipedAllCards: false,
           swipeDirection: '',
           isSwipingBack: false,
@@ -31,7 +42,11 @@ export default class Tinder extends Component {
           cardCompoonent: {
               1: card1,
               2: card2,
-              3: card3
+              3: card3,
+              4: card4,
+              5: card5,
+              6: card6,
+              7: card7,
           }
         }
       }
@@ -80,88 +95,20 @@ export default class Tinder extends Component {
                 this.swiper = swiper
               }}
               onSwiped={this.onSwiped}
-              onTapCard={this.swipeLeft}
+              // onTapCard={this.swipeLeft}
               cards={this.state.cards}
               cardIndex={this.state.cardIndex}
               cardVerticalMargin={80}
               renderCard={this.renderCard}
-              onSwipedAll={this.onSwipedAllCards}
-              stackSize={3}
-              stackSeparation={15}
+              // onSwipedAll={this.onSwipedAllCards}
+              stackSize={0}
+              stackSeparation={12}
               overlayLabels={{
-                bottom: {
-                  title: 'BLEAH',
-                  style: {
-                    label: {
-                      backgroundColor: 'black',
-                      borderColor: 'black',
-                      color: 'white',
-                      borderWidth: 1
-                    },
-                    wrapper: {
-                      flexDirection: 'column',
-                      alignItems: 'center',
-                      justifyContent: 'center'
-                    }
-                  }
-                },
-                left: {
-                  title: 'NOPE',
-                  style: {
-                    label: {
-                      backgroundColor: 'black',
-                      borderColor: 'black',
-                      color: 'white',
-                      borderWidth: 1
-                    },
-                    wrapper: {
-                      flexDirection: 'column',
-                      alignItems: 'flex-end',
-                      justifyContent: 'flex-start',
-                      marginTop: 30,
-                      marginLeft: -30
-                    }
-                  }
-                },
-                right: {
-                  title: 'LIKE',
-                  style: {
-                    label: {
-                      backgroundColor: 'black',
-                      borderColor: 'black',
-                      color: 'white',
-                      borderWidth: 1
-                    },
-                    wrapper: {
-                      flexDirection: 'column',
-                      alignItems: 'flex-start',
-                      justifyContent: 'flex-start',
-                      marginTop: 30,
-                      marginLeft: 30
-                    }
-                  }
-                },
-                top: {
-                  title: 'SUPER LIKE',
-                  style: {
-                    label: {
-                      backgroundColor: 'black',
-                      borderColor: 'black',
-                      color: 'white',
-                      borderWidth: 1
-                    },
-                    wrapper: {
-                      flexDirection: 'column',
-                      alignItems: 'center',
-                      justifyContent: 'center'
-                    }
-                  }
-                }
               }}
               animateOverlayLabelsOpacity
               animateCardOpacity
             >
-              <Button onPress={this.swipeLeft} title='Swipe Left' />
+              <Button onPress={this.swipeLeft} title='Memorize your Vocabularies' />
             </Swiper>
           </View>
         )
@@ -177,7 +124,7 @@ export default class Tinder extends Component {
         flex: 1,
         borderRadius: 4,
         borderWidth: 2,
-        borderColor: '#E8E8E8',
+        borderColor: 'red',
         justifyContent: 'center',
         backgroundColor: 'white'
       },
