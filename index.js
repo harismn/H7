@@ -28,4 +28,4 @@ class Main extends Component {
 }
 
 
-AppRegistry.registerComponent('V7', () => Tinder);
+AppRegistry.registerComponent('V7', () => SwipeLayer);
