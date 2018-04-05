@@ -12,6 +12,7 @@ import {
   View,
   TouchableOpacity,
 } from 'react-native';
+import { StackNavigator } from 'react-navigation'
 
 
 export default class Content extends Component {
@@ -19,16 +20,15 @@ export default class Content extends Component {
   render() {
     return ( 
       <View style={styles.container}>
-      <Text style={styles.textUp}>Hadiah Untuk Anda</Text>
+      <Text style={styles.textUp}>Selamat datang di</Text>
       <Text style={styles.textNumber}>7</Text>
-      <Text style={styles.texton}>abad</Text>
+      <Text style={styles.texton}>Aplikasi</Text>
       <Text style={styles.texton}>Gratis!</Text>
       <TouchableOpacity
       style={styles.button}
       onPress={() => this.props.navigation.navigate('Details')}>
-         <Text> Aktifkan </Text>
+         <Text> Lanjutkan </Text>
        </TouchableOpacity>
-      <Text style={styles.textBottom}> Lewati </Text>
       </View>
     );
   }
