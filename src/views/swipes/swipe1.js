@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import {
   AppRegistry,
-  StyleSheet,
   Text,
   View,
   TouchableWithoutFeedback,
+  Image,
 } from 'react-native';
+import styles from './style'
+import Foto from '../../asets'
 
 export default class Swipe1 extends Component {
     constructor(){
@@ -15,23 +17,14 @@ export default class Swipe1 extends Component {
     render(){
         return(
             <View style={styles.container}>
-            <Text style={styles.text}>Mustahil untuk tahu 100% tentang bahasa inggris. 
-            Selalu ada kata baru yang harus dipelajari</Text>
+            <Image
+            style={styles.image}
+            source={Foto.swipe1}
+            />
+            <Text style={styles.text}>Mustahil untuk tahu 100%</Text>
+            <Text style={styles.text}> tentang bahasa inggris.</Text>
+            <Text style={styles.text}>Selalu ada kata baru yang harus dipelajari</Text>
             </View>
         );
     }
 }
-
-
-const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      justifyContent: 'center',
-      alignItems: 'center',
-      backgroundColor: '#FF9500',
-    },
-    text: {
-      color: '#fff',
-      fontSize: 27,
-    }
-  })

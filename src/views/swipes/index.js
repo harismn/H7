@@ -6,6 +6,7 @@ import {
   View,
   TouchableOpacity,
 } from 'react-native';
+import styles from './style'
 import Swiper from 'react-native-swiper';
 import Swipe1 from './swipe1'
 import Swipe2 from './swipe2'
@@ -31,33 +32,3 @@ export default class SwiperSlayer extends Component {
     );
   }
 }
-
-
-const styles = StyleSheet.create({
-    wrapper: {
-        
-    },
-    slide1: {
-      flex: 1,
-      justifyContent: 'center',
-      alignItems: 'center',
-      backgroundColor: '#9DD6EB',
-    }, 
-    slide2: {
-      flex: 1,
-      justifyContent: 'center',
-      alignItems: 'center',
-      backgroundColor: '#97CAE5',
-    },
-    slide3: {
-      flex: 1,
-      justifyContent: 'center',
-      alignItems: 'center',
-      backgroundColor: '#92BBD9',
-    },
-    text: {
-      color: '#fff',
-      fontSize: 30,
-      fontWeight: 'bold',
-    }
-  })

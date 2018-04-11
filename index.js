@@ -1,31 +1,10 @@
 import { AppRegistry } from 'react-native';
 import React, { Component } from 'react'
-import App from './App';
-import FirstScreen from './src/views/firstScreen'
-import Content from './src/views/content'
-import Level  from './src/views/level'
-import NewVocab from './src/views/NewVocab'
-import tryScreen from './src/views/tryScreen'
-import SwipeLayer from './src/views/swipes/swipeLayer'
-import Sidebar from './src/views/sidebar'
-import Tinder from './src/views/tinder/tinder'
+// import App from './App';
+// import Selector from './src/views/selector/index'
+// import Selector from './src/views/newVocab'
+import Sidebars from './src/views/swipes'
 
 
-class Main extends Component {
-    constructor(props){
-        super(props);
-        this.state = { currentScreen: 'FirstScreen'};
-        console.log('start')
-        setTimeout(()=>{
-            this.setState({ currentScreen: 'Content' })
-        }, 2000)
-    }
-    render(){
-        const { currentScreen } = this.state
-        let mainScreen = currentScreen === 'FirstScreen' ? <FirstScreen /> : <Content />
-        return mainScreen
-    }
-}
 
-
-AppRegistry.registerComponent('V7', () => Content);
+AppRegistry.registerComponent('V7', () => Sidebars);

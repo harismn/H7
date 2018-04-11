@@ -1,15 +1,16 @@
 import {StyleSheet, View, Text} from 'react-native';
 import React, {Component} from 'react';
 import {PagerTabIndicator, IndicatorViewPager, PagerTitleIndicator, PagerDotIndicator} from 'rn-viewpager';
+import Foto from '../../asets'
 
 export default class Sidebar extends Component {
         _renderTabIndicator() {
         let tabs = [{
-                iconSource: require('../images/ria.jpg'),
+                iconSource: Foto.foto3,
             },{
-                iconSource: require('../images/edit.png'),
+                iconSource: Foto.foto1,
             },{
-                iconSource: require('../images/edit.png'),
+                iconSource: Foto.foto1,
         }];
         return <PagerTabIndicator tabs={tabs} iconStyle={{ width: 30, height: 30, borderColor: 150}} />;
     }

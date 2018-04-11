@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Text, View, TouchableOpacity, StyleSheet } from 'react-native'
+import styles from './style'
 
 export default class Selector extends Component {
     constructor(props) {
@@ -71,16 +72,3 @@ export default class Selector extends Component {
         )
     }
 }
-
-const styles = StyleSheet.create({
-    focus: {
-        fontSize : 15,
-        color: 'white',
-        padding: 15,  
-    },
-    blur: {
-        fontSize : 15,
-        color: '#E0E0E0',
-        padding: 15,  
-    },
-})  
