@@ -7,4 +7,9 @@ import Sidebars from './src/views/swipes'
 
 
 
+<<<<<<< HEAD
 AppRegistry.registerComponent('V7', () => Sidebars);
+=======
+
+AppRegistry.registerComponent('V7', () => SwipeLayer);
+>>>>>>> 4b7ae2f68d083553bdbf782e24293dc270387318

@@ -94,6 +94,7 @@ export default class Tinder extends Component {
               ref={swiper => {
                 this.swiper = swiper
               }}
+              backgroundColor="red"
               onSwiped={this.onSwiped}
               // onTapCard={this.swipeLeft}
               cards={this.state.cards}
@@ -107,6 +108,9 @@ export default class Tinder extends Component {
               }}
               animateOverlayLabelsOpacity
               animateCardOpacity
+              disableTopSwipe
+              disableBottomSwipe
+              verticalSwipe={false}
             >
               <Button onPress={this.swipeLeft} title='Memorize your Vocabularies' />
             </Swiper>

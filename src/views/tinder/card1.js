@@ -22,6 +22,10 @@ export default class Card1 extends Component {
               style={styles.textInput}
               onChangeText={(text) => this.setState({text})}
               value={this.state.text}
+              placeholder="masukan teks di sini"
+              placeholderTextColor="#BDBDBD"
+              
+
             />
             <Text style={styles.secondText}>Hasil Translate</Text>
             <TouchableOpacity style={styles.button}
@@ -57,7 +61,8 @@ const styles = StyleSheet.create({
     },
     textInput: {
       height: 40, 
-      margin: 50,
+      marginVertical: 50,
+      width: '80%'
     },
     secondText: {
       height: 40, 
