@@ -9,6 +9,7 @@ import Splash from './splash'
 import Swipes from './swipes'
 import Tinder from './tinder'
 import Try from './try'
+import Login from './Login'
 import Welcome from './welcome'
 import styles from './swipes/style';
 
@@ -58,6 +59,13 @@ const AppNavigator = StackNavigator({
     },
     tinder: {
         screen: Tinder,
+        navigationOptions: {
+            headerStyle: styles.header,
+            header: null,
+        }
+    },
+    login: {
+        screen: Login,
         navigationOptions: {
             headerStyle: styles.header,
             header: null,

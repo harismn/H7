@@ -21,9 +21,9 @@ export default class Swipe2 extends Component {
             style={styles.image}
             source={Foto.swipe2}
             />
-            <Text style={styles.text}>Mustahil untuk tahu 100%</Text>
-            <Text style={styles.text}> tentang bahasa inggris.</Text>
-            <Text style={styles.text}>Selalu ada kata baru yang harus dipelajari</Text>
+            <Text style={styles.text}>Terkadang belajar itu melelahkan</Text>
+            <Text style={styles.text}> tapi percayalah, akan indah.</Text>
+            <Text style={styles.text}>pada waktunya</Text>
             </View>
         );
     }

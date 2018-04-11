@@ -21,9 +21,9 @@ export default class Swipe5 extends Component {
             style={styles.image}
             source={Foto.swipe5}
             />
-            <Text style={styles.text}>Mustahil untuk tahu 100%</Text>
-            <Text style={styles.text}> tentang bahasa inggris.</Text>
-            <Text style={styles.text}>Selalu ada kata baru yang harus dipelajari</Text>
+            <Text style={styles.text}>Tidak perlu memaksakan untuk</Text>
+            <Text style={styles.text}> menghapal banyak vocabulary</Text>
+            <Text style={styles.text}>cukup 7 vocabulary sehari saja</Text>
             </View>
         );
     }

@@ -21,9 +21,9 @@ export default class Swipe6 extends Component {
             style={styles.image}
             source={Foto.swipe6}
             />
-            <Text style={styles.text}>Mustahil untuk tahu 100%</Text>
-            <Text style={styles.text}> tentang bahasa inggris.</Text>
-            <Text style={styles.text}>Selalu ada kata baru yang harus dipelajari</Text>
+            <Text style={styles.text}>Dan aplikasi ini adalah jawabannya</Text>
+            <Text style={styles.text}> 7 Aplication akan</Text>
+            <Text style={styles.text}>membantu anda untuk menghapalkan banyak vocab</Text>
             </View>
         );
     }

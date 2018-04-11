@@ -22,7 +22,7 @@ export default class Swipe1 extends Component {
             source={Foto.swipe1}
             />
             <Text style={styles.text}>Mustahil untuk tahu 100%</Text>
-            <Text style={styles.text}> tentang bahasa inggris.</Text>
+            <Text style={styles.text}>tau tentang bahasa inggris.</Text>
             <Text style={styles.text}>Selalu ada kata baru yang harus dipelajari</Text>
             </View>
         );

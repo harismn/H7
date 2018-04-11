@@ -21,9 +21,9 @@ export default class Swipe3 extends Component {
             style={styles.image}
             source={Foto.swipe3}
             />
-            <Text style={styles.text}>Mustahil untuk tahu 100%</Text>
-            <Text style={styles.text}> tentang bahasa inggris.</Text>
-            <Text style={styles.text}>Selalu ada kata baru yang harus dipelajari</Text>
+            <Text style={styles.text}>Untuk belajar suatau bahasa baru</Text>
+            <Text style={styles.text}> anda mperlu menghapalkan beberapa</Text>
+            <Text style={styles.text}>Vocabualary yang baru</Text>
             </View>
         );
     }
