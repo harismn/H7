@@ -11,7 +11,7 @@ import Tinder from './tinder'
 import Try from './try'
 import Login from './Login'
 import Welcome from './welcome'
-import styles from './swipes/style';
+// import styles from './swipes/style'
 
 
 const AppNavigator = StackNavigator({

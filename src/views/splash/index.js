@@ -4,7 +4,7 @@ import {
   Text,
   View
 } from 'react-native';
-
+// import Navigator from '../root-navigation'
 import { NavigationActions } from 'react-navigation'
 import styles from './style'
 
@@ -16,8 +16,8 @@ export default class Splash extends Component {
 
   componentDidMount (){
     setTimeout(() => {
-      this.navigate('tinder')
-    }, 1500)
+      this.navigate('swipes')
+    }, 1000)
   }
 
   navigate = routeName => {
