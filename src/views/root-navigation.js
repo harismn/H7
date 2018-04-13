@@ -11,15 +11,23 @@ import Tinder from './tinder'
 import Try from './try'
 import Login from './Login'
 import Welcome from './welcome'
+import Vocab from './Vocab'
 // import styles from './swipes/style'
 
 
 const AppNavigator = StackNavigator({
-    Level: {
+    level: {
         screen: Level,
         navigationOptions: {
             headerStyle: styles.header,
             header: null,
+        }
+    },
+    vocab: {
+        screen: Vocab,
+        navigationOptions: {
+            headerStyle: styles.header,
+            header: null
         }
     },
     newvocab: {
@@ -36,7 +44,7 @@ const AppNavigator = StackNavigator({
             header: null,
         }
     },
-    siderbars: {
+    sidebars: {
         screen: Sidebars,
         navigationOptions: {
             headerStyle: styles.header,

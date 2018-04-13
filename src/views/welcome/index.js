@@ -20,7 +20,7 @@ export default class Content extends Component {
       <Text style={styles.texton}>Gratis!</Text>
       <TouchableOpacity
       style={styles.button}
-      onPress={() => this.props.navigation.navigate()}>
+      onPress={() => this.props.navigation.navigate('swipes')}>
          <Text> Login </Text>
        </TouchableOpacity>
       </View>

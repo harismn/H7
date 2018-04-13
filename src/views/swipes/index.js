@@ -5,6 +5,7 @@ import {
   Text,
   View,
   TouchableOpacity,
+  Button,
 } from 'react-native';
 import styles from './style'
 import Swiper from 'react-native-swiper';
@@ -25,12 +26,12 @@ export default class SwiperSlayer extends Component {
       style={styles.wrapper}
       showsPagination = {true}
         >
-       <Swipe1 />
-       <Swipe2 />
-       <Swipe3 />
-       <Swipe4 />
-       <Swipe5 />
-       <Swipe6 />
+        <Swipe1 />
+          <Swipe2 />
+            <Swipe3 />
+              <Swipe4 />
+            <Swipe5 />
+          <Swipe6 />
       </Swiper>
     );
   }

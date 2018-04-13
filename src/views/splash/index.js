@@ -16,7 +16,7 @@ export default class Splash extends Component {
 
   componentDidMount (){
     setTimeout(() => {
-      this.navigate('swipes')
+      this.navigate('welcome')
     }, 1000)
   }
 
