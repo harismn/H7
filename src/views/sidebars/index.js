@@ -45,7 +45,7 @@ export default class Sidebar extends Component {
                         disini text aja
                         </Text>
                         <TouchableOpacity style={styles.button}
-                        onPress={() => this.props.navigation.navigate('vocab')}>
+                        onPress={() => this.props.navigation.navigate('textinput')}>
                         <Text> kek aplikasi selanjutnya </Text>
                         </TouchableOpacity>
 

@@ -12,6 +12,7 @@ import Try from './try'
 import Login from './Login'
 import Welcome from './welcome'
 import Vocab from './Vocab'
+import TextInput from './textInput'
 // import styles from './swipes/style'
 
 
@@ -25,6 +26,13 @@ const AppNavigator = StackNavigator({
     },
     vocab: {
         screen: Vocab,
+        navigationOptions: {
+            headerStyle: styles.header,
+            header: null
+        }
+    },
+    textinput: {
+        screen: TextInput,
         navigationOptions: {
             headerStyle: styles.header,
             header: null

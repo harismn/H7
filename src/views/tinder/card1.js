@@ -17,21 +17,24 @@ export default class Card1 extends Component {
     render(){
         return(
           <View style={styles.container}>
-            <Text style={styles.text}>Vocab 1</Text>
-            <TextInput
-              style={styles.textInput}
-              onChangeText={(text) => this.setState({text})}
-              value={this.state.text}
-              placeholder="masukan teks di sini"
-              placeholderTextColor="#BDBDBD"
-              
-
-            />
-            <Text style={styles.secondText}>Hasil Translate</Text>
+            <Text style={styles.text}>Disini Text</Text>
             <TouchableOpacity style={styles.button}
             onPress={() => console.log('aku keluar nih')}>
             <Text> Berikutnya </Text>
             </TouchableOpacity>
+            <TouchableOpacity style={styles.button}
+            onPress={() => console.log('aku keluar nih')}>
+            <Text> Berikutnya </Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.button}
+            onPress={() => console.log('aku keluar nih')}>
+            <Text> Berikutnya </Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.button}
+            onPress={() => console.log('aku keluar nih')}>
+            <Text> Berikutnya </Text>
+            </TouchableOpacity>
+
           </View>
         );
     }
@@ -55,7 +58,6 @@ const styles = StyleSheet.create({
     },
     button: {
     alignItems: 'center',
-    backgroundColor: '#DDDDDD',
     padding: 10,
     borderRadius: 15,
     },
