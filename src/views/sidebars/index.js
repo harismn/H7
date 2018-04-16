@@ -3,14 +3,14 @@ import {
     View, 
     Text,
     Image,
-    Button,
+    TouchableOpacity,
 } from 'react-native';
 import React, {Component} from 'react';
 import {
     PagerTabIndicator, 
     IndicatorViewPager, 
     PagerTitleIndicator, 
-    PagerDotIndicator
+    PagerDotIndicator,
 } from 'rn-viewpager';
 import Foto from '../../asets'
 // import PageOne from './pageOne'
@@ -44,6 +44,11 @@ export default class Sidebar extends Component {
                         <Text style={styles.page2text}>
                         disini text aja
                         </Text>
+                        <TouchableOpacity style={styles.button}
+                        onPress={() => this.props.navigation.navigate('vocab')}>
+                        <Text> kek aplikasi selanjutnya </Text>
+                        </TouchableOpacity>
+
                     </View>
                     <View style={{backgroundColor:'#1AA094'}}>
                     <Image
@@ -72,4 +77,15 @@ const styles = StyleSheet.create({
       fontSize: 30,
       fontWeight: 'bold',
     },
+    button: {
+        alignItems: 'center',
+        backgroundColor: 'orange',
+        padding: 10,
+        margin: 10,
+        paddingVertical: 10,
+        paddingHorizontal: 20,
+        borderRadius: 10,
+        borderWidth: 1,
+        width: '70%',
+      },
 })
