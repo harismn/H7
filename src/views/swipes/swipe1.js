@@ -3,7 +3,6 @@ import {
   AppRegistry,
   Text,
   View,
-  TouchableWithoutFeedback,
   Image,
 } from 'react-native';
 import styles from './style'
@@ -21,9 +20,12 @@ export default class Swipe1 extends Component {
             style={styles.image}
             source={Foto.swipe1}
             />
-            <Text style={styles.text}>Mustahil untuk tahu 100%</Text>
-            <Text style={styles.text}>tau tentang bahasa inggris.</Text>
-            <Text style={styles.text}>Selalu ada kata baru yang harus dipelajari</Text>
+            <View style={{ justifyContent: 'center', alignItems: 'center' }}>
+                <Text style={styles.text}>Mustahil untuk tahu 100%</Text>
+                <Text style={styles.text}>tentang bahasa inggris.</Text>
+                <Text style={styles.text}>Selalu ada kata baru </Text>
+                <Text style={styles.text}>yang harus dipelajari</Text>
+            </View>
             </View>
         );
     }

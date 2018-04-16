@@ -28,3 +28,4 @@ export default class Swipe5 extends Component {
         );
     }
 }
+
