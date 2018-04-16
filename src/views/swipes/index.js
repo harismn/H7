@@ -7,6 +7,7 @@ import {
   TouchableOpacity,
   Button,
 } from 'react-native';
+import { StackNavigator } from 'react-navigation'
 import styles from './style'
 import Swiper from 'react-native-swiper';
 import Swipe1 from './swipe1'
@@ -31,7 +32,7 @@ export default class SwiperSlayer extends Component {
             <Swipe3 />
               <Swipe4 />
             <Swipe5 />
-          <Swipe6 />
+          <Swipe6 onPress={() => this.props.navigation.navigate('sidebars')} />
       </Swiper>
     );
   }
