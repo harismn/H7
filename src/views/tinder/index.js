@@ -10,7 +10,7 @@ import {
   StyleSheet,
   Text,
   View,
-  Button
+  Button,
 } from 'react-native';
 import Swiper from 'react-native-deck-swiper'
 import Card1 from '../tinder/card1'
@@ -20,6 +20,7 @@ import Card4 from '../tinder/card4'
 import Card5 from '../tinder/card5'
 import Card6 from '../tinder/card6'
 import Card7 from '../tinder/card7'
+import Color from '../../asets'
 
 const card1 = <Card1 />
 const card2 = <Card2 />
@@ -94,7 +95,7 @@ export default class Tinder extends Component {
               ref={swiper => {
                 this.swiper = swiper
               }}
-              backgroundColor="red"
+              backgroundColor={Color.softGrey}
               onSwiped={this.onSwiped}
               // onTapCard={this.swipeLeft}
               cards={this.state.cards}
@@ -112,7 +113,9 @@ export default class Tinder extends Component {
               disableBottomSwipe
               verticalSwipe={false}
             >
-              <Button onPress={this.swipeLeft} title='Memorize your Vocabularies' />
+              <View style={{ height: 60, backgroundColor: Color.orange, alignItems: 'center', justifyContent: 'center' }}>
+                <Text style={{ color: Color.white, fontSize: 20, fontWeight: '500' }}>Improve your vocabulary</Text>
+              </View>
             </Swiper>
           </View>
         )
@@ -128,9 +131,10 @@ export default class Tinder extends Component {
         flex: 1,
         borderRadius: 4,
         borderWidth: 2,
-        borderColor: 'red',
+        borderColor: '#FF9500',
+        borderWidth: 3,
         justifyContent: 'center',
-        backgroundColor: 'white'
+        backgroundColor: '#fff'
       },
       text: {
         textAlign: 'center',
