@@ -13,7 +13,7 @@ export default class Card1 extends Component {
   constructor(props) {
     super(props);
     this.state = { text: '' };
-  }
+    }
 
     render(){
         return(
@@ -24,7 +24,7 @@ export default class Card1 extends Component {
               onChangeText={(text) => this.setState({text})}
               value={this.state.text}
               placeholder="masukan teks di sini"
-              placeholderTextColor="#BDBDBD"
+              placeholderTextColor="black"
             />
             <TextInput
               style={styles.textInput}

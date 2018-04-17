@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
     },
     textTouch: { 
       color: '#000',
-      fontSize: 25,
+      fontSize: 20,
       margin: 10,
       fontFamily: 'text-align',
 

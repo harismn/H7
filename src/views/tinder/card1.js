@@ -14,26 +14,31 @@ export default class Card1 extends Component {
     super(props);
     this.state = { text: '' };
   }
+  
 
     render(){
         return(
           <View style={styles.container}>
-            <Text style={styles.text}>Text keular disini</Text>
+            <Text style={styles.text}> Harras </Text>
             <TouchableOpacity style={styles.button}
             onPress={() => console.log('aku keluar nih')}>
-            <Text style={styles.textTouch}> ini hasil translate </Text>
+            <Text style={styles.textTouch}> mengganggu </Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.button}
             onPress={() => console.log('aku keluar nih')}>
-            <Text style={styles.textTouch}> ini hasil translate </Text>
+            <Text style={styles.textTouch}> ketukan </Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.button}
             onPress={() => console.log('aku keluar nih')}>
-            <Text style={styles.textTouch}> ini hasil translate </Text>
+            <Text style={styles.textTouch}> tanpa sepengetahuan </Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.button}
             onPress={() => console.log('aku keluar nih')}>
-            <Text style={styles.textTouch}> ini hasil translate </Text>
+            <Text style={styles.textTouch}> ketakutan </Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.button}
+            onPress={() => console.log('aku keluar nih')}>
+            <Text style={styles.textTouch}>  </Text>
             </TouchableOpacity>
           </View>
         );
