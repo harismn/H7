@@ -14,8 +14,17 @@ export default class Card1 extends Component {
   constructor(props) {
     super(props);
     this.state = { text: '' };
-  }
+    // const translate = require('google-translate-api');
 
+    //   translate(this.state , {to: 'en'}).then(res => {
+    //       console.log(res.text);
+    //       //=> I speak English
+    //       console.log(res.from.language.iso);
+    //       //=> nl
+    //   }).catch(err => {
+    //       console.error(err);
+    //   });
+  }
     render(){
         return(
           <View style={styles.container}>
