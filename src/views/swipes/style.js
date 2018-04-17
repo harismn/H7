@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native'
+import Color from '../../asets'
 
 const styles = StyleSheet.create({
     text: {
@@ -10,7 +11,7 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#FF9500',
+        backgroundColor: Color.orange,
       },
       image: {
         width: 150,
@@ -24,7 +25,7 @@ const styles = StyleSheet.create({
       },
       button: {
         alignItems: 'center',
-        backgroundColor: 'orange',
+        backgroundColor: Color.orange,
         padding: 10,
         margin: 10,
         paddingVertical: 10,

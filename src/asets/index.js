@@ -23,6 +23,7 @@ const softGrey = '#E0E0E0'
 const black = '#000000'
 const orange = '#FF9800'
 const red = '#F44336'
+const gray = '#DDDDDD'
 
 
 export default {
@@ -44,6 +45,7 @@ export default {
    audio,
   
     // Color
+    gray,
     green,
     blue,
     white,

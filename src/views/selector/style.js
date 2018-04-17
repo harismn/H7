@@ -1,14 +1,15 @@
 import { StyleSheet } from 'react-native'
+import Color from '../../asets'
 
 const styles = StyleSheet.create({
     focus: {
         fontSize : 15,
-        color: 'white',
+        color: Color.white,
         padding: 15,  
     },
     blur: {
         fontSize : 15,
-        color: '#E0E0E0',
+        color: Color.softGrey,
         padding: 15,  
     },
 });  

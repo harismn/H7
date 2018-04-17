@@ -1,11 +1,12 @@
 import { StyleSheet } from 'react-native'
+import Color from '../../asets'
 
 const styles = StyleSheet.create({
     container: {
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#FF9500'
+        backgroundColor: Color.orange,
     },
     text: {
       fontSize: 20,
@@ -15,7 +16,7 @@ const styles = StyleSheet.create({
     },
     textButton: {
         alignItems: 'center',
-        backgroundColor: '#DDDDDD',
+        backgroundColor: Color.gray,
         padding: 10,
         margin: 10,
         paddingVertical: 10,

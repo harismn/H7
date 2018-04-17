@@ -1,11 +1,12 @@
 import { StyleSheet } from 'react-native'
+import Color from '../../asets'
 
 const styles = StyleSheet.create({
     container: {
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center', 
-        backgroundColor: '#FF9500',
+        backgroundColor: Color.orange,
         padding:  50
     },
     textUp: {
@@ -20,7 +21,7 @@ const styles = StyleSheet.create({
     },
     button: {
         alignItems: 'center',
-        backgroundColor: '#DDDDDD',
+        backgroundColor: Color.gray,
         padding: 10,
         margin: 10,
         paddingVertical: 10,

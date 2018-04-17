@@ -1,28 +1,29 @@
 import { StyleSheet } from 'react-native'
+import Color from '../../asets'
 
 const styles = StyleSheet.create({
     container: {
       flex: 1,
       justifyContent: 'center',
       alignItems: 'center',
-      backgroundColor: '#FF9500',
+      backgroundColor: Color.orange,
       padding:  20
     },
     textNumber: {
       fontSize: 130,
       fontWeight: 'bold',
-      color: 'white',
+      color: Color.white,
       margin: 16,
     },
     textUp: {
       fontSize : 30,
       fontWeight: 'bold',
-      color: 'white',
+      color: Color.white,
   
     },
     button: {
       alignItems: 'center',
-      backgroundColor: '#DDDDDD',
+      backgroundColor: Color.gray,
       padding: 10,
       margin: 10,
       paddingVertical: 10,
@@ -34,7 +35,7 @@ const styles = StyleSheet.create({
     texton: {
       fontSize : 30,
       fontWeight: 'bold',
-      color: 'white',
+      color: Color.white,
     },
   });
 

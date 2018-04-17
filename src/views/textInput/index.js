@@ -8,6 +8,7 @@ import {
   TextInput,
 } from 'react-native';
 import styles from './style'
+import Color from '../../asets'
 
 export default class Card1 extends Component {
   constructor(props) {
@@ -24,49 +25,49 @@ export default class Card1 extends Component {
               onChangeText={(text) => this.setState({text})}
               value={this.state.text}
               placeholder="masukan teks di sini"
-              placeholderTextColor="#BDBDBD"
+              placeholderTextColor={Color.gray}
             />
             <TextInput
               style={styles.textInput}
-              onChangeText={(text) => this.setState({text})}
-              value={this.state.text}
+              onChangeText={(text1) => this.setState({text1})}
+              value={this.state.text1}
               placeholder="masukan teks di sini"
-              placeholderTextColor="#BDBDBD"
+              placeholderTextColor={Color.gray}
             />
             <TextInput
               style={styles.textInput}
-              onChangeText={(text) => this.setState({text})}
-              value={this.state.text}
+              onChangeText={(text2) => this.setState({text2})}
+              value={this.state.text2}
               placeholder="masukan teks di sini"
-              placeholderTextColor="#BDBDBD"
+              placeholderTextColor={Color.gray}
             />
             <TextInput
               style={styles.textInput}
-              onChangeText={(text) => this.setState({text})}
-              value={this.state.text}
+              onChangeText={(text3) => this.setState({text3})}
+              value={this.state.text3}
               placeholder="masukan teks di sini"
-              placeholderTextColor="#BDBDBD"
+              placeholderTextColor={Color.gray}
             />
             <TextInput
               style={styles.textInput}
-              onChangeText={(text) => this.setState({text})}
-              value={this.state.text}
+              onChangeText={(text4) => this.setState({text4})}
+              value={this.state.text4}
               placeholder="masukan teks di sini"
-              placeholderTextColor="#BDBDBD"
+              placeholderTextColor={Color.gray}
             />
             <TextInput
               style={styles.textInput}
-              onChangeText={(text) => this.setState({text})}
-              value={this.state.text}
+              onChangeText={(text5) => this.setState({text5})}
+              value={this.state.text5}
               placeholder="masukan teks di sini"
-              placeholderTextColor="#BDBDBD"
+              placeholderTextColor={Color.gray}
             />
             <TextInput
               style={styles.textInput}
-              onChangeText={(text) => this.setState({text})}
-              value={this.state.text}
+              onChangeText={(text6) => this.setState({text6})}
+              value={this.state.text6}
               placeholder="masukan teks di sini"
-              placeholderTextColor="#BDBDBD"
+              placeholderTextColor={Color.gray}
             />
             <TouchableOpacity style={styles.button}
             onPress={() => this.props.navigation.navigate('tinder')}>
