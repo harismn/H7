@@ -23,9 +23,10 @@ export default class SwiperSlayer extends Component {
 
   render(){
     return (
-      <Swiper 
+      <Swiper
       style={styles.wrapper}
       showsPagination = {true}
+      loop={false}
         >
         <Swipe1 />
           <Swipe2 />

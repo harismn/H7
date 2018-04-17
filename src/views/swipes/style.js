@@ -24,13 +24,14 @@ const styles = StyleSheet.create({
       },
       button: {
         alignItems: 'center',
-        backgroundColor: 'orange',
+        backgroundColor: '#FFF',
         padding: 10,
         margin: 10,
+        borderColor: 'orange',
         paddingVertical: 10,
         paddingHorizontal: 20,
         borderRadius: 10,
-        borderWidth: 1,
+        borderWidth: 2,
         width: '70%',
       },
   })

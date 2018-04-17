@@ -12,6 +12,7 @@ const setting = require('./images/setting.png')
 const fire = require('./images/fire.png')
 const left = require('./images/left.jpeg')
 const right = require('./images/right.jpeg')
+const circle = require('./images/circle.png')
 
 
 const green = '#7ED321'
@@ -41,7 +42,8 @@ export default {
    fire,
    left,
    right,
-  
+   circle,
+
     // Color
     green,
     blue,
@@ -53,4 +55,3 @@ export default {
     darkBlue,
     softGrey,
   }
-  

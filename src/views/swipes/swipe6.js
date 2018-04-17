@@ -12,7 +12,7 @@ import Foto from '../../asets'
 export default class Swipe6 extends Component {
 
     render(){
-    console.log(this.props, 'swipe')        
+    console.log(this.props, 'swipe')
         return(
             <View style={styles.container}>
                 <Image
@@ -27,10 +27,9 @@ export default class Swipe6 extends Component {
                 <TouchableOpacity
                     style={styles.button}
                     onPress={this.props.onPress}>
-                        <Text> Lanjutkan </Text>
+                        <Text style={{ fontSize: 16, color: 'orange' }}> Lanjutkan </Text>
                 </TouchableOpacity>
             </View>
         );
     }
 }
-
