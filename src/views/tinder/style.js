@@ -26,8 +26,18 @@ const styles = StyleSheet.create({
       alignItems: 'center',
       padding: 10,
       borderRadius: 15,
-      
-
+    },
+    correct: {
+      alignItems: 'center',
+      padding: 10,
+      borderRadius: 15,
+      backgroundColor: 'green',
+    },
+    wrong: {
+      alignItems: 'center',
+      padding: 10,
+      borderRadius: 15,
+      backgroundColor: 'red',
     },
     textInput: {
       height: 40, 

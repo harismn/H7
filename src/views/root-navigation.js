@@ -13,6 +13,7 @@ import Login from './Login'
 import Welcome from './welcome'
 import Vocab from './Vocab'
 import TextInput from './textInput'
+import Voice from './voice'
 // import styles from './swipes/style'
 
 
@@ -31,6 +32,14 @@ const AppNavigator = StackNavigator({
             header: null
         }
     },
+    voice: {
+        screen: Voice,
+        navigationOptions: {
+            headerStyle: styles.header,
+            header: null
+        }
+    },
+
     textinput: {
         screen: TextInput,
         navigationOptions: {

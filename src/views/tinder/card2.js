@@ -18,22 +18,22 @@ export default class Card1 extends Component {
     render(){
         return(
           <View style={styles.container}>
-            <Text style={styles.text}>Text keular disini</Text>
+            <Text style={styles.text}> Conducted </Text>
             <TouchableOpacity style={styles.button}
             onPress={() => console.log('aku keluar nih')}>
-            <Text style={styles.textTouch}> ini hasil translate </Text>
+            <Text style={styles.textTouch}> keberanian </Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.button}
             onPress={() => console.log('aku keluar nih')}>
-            <Text style={styles.textTouch}> ini hasil translate </Text>
+            <Text style={styles.textTouch}> dilakuakn </Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.button}
             onPress={() => console.log('aku keluar nih')}>
-            <Text style={styles.textTouch}> ini hasil translate </Text>
+            <Text style={styles.textTouch}></Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.button}
             onPress={() => console.log('aku keluar nih')}>
-            <Text style={styles.textTouch}> ini hasil translate </Text>
+            <Text style={styles.textTouch}></Text>
             </TouchableOpacity>
           </View>
         );

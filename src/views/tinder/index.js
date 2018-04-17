@@ -12,6 +12,7 @@ import {
   View,
   Button,
 } from 'react-native';
+import { NavigationActions } from 'react-navigation'
 import Swiper from 'react-native-deck-swiper'
 import Card1 from '../tinder/card1'
 import Card2 from  '../tinder/card2'
@@ -22,7 +23,7 @@ import Card6 from '../tinder/card6'
 import Card7 from '../tinder/card7'
 import Color from '../../asets'
 
-const card1 = <Card1 />
+const card1 = <Card1 onPress={() => swipeLeft()}/>
 const card2 = <Card2 />
 const card3 = <Card3 />
 const card4 = <Card4 />
@@ -58,11 +59,17 @@ export default class Tinder extends Component {
           </View>
         )
       };
+
+      navigate = routeName => {
+        const resetAction = NavigationActions.reset({
+          index: 0,
+          actions: [NavigationActions.navigate({ routeName })],
+        })
+        this.props.navigation.dispatch(resetAction)
+      }
     
       onSwipedAllCards = () => {
-        this.setState({
-          swipedAllCards: true
-        })
+        this.navigate('sidebars')
       };
     
       swipeBack = () => {
@@ -97,12 +104,12 @@ export default class Tinder extends Component {
               }}
               backgroundColor={Color.softGrey}
               onSwiped={this.onSwiped}
-              // onTapCard={this.swipeLeft}
+              onTapCard={this.swipeLeft}
               cards={this.state.cards}
               cardIndex={this.state.cardIndex}
               cardVerticalMargin={80}
               renderCard={this.renderCard}
-              // onSwipedAll={this.onSwipedAllCards}
+              onSwipedAll={this.onSwipedAllCards}
               stackSize={0}
               stackSeparation={12}
               overlayLabels={{
