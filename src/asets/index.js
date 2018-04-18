@@ -14,6 +14,7 @@ const left = require('./images/left.jpeg')
 const right = require('./images/right.jpeg')
 const circle = require('./images/circle.png')
 const audio = require('./images/audio.png')
+const button = require('./images/button.png')
 
 const green = '#7ED321'
 const blue = '#03A9F4'
@@ -44,6 +45,7 @@ export default {
    right,
    circle,
    audio,
+   button,
 
     // Color
     green,

@@ -86,7 +86,7 @@ export default class Sidebar extends Component {
                             <Image source={Foto.circle} style={styles.circle} />
                             <Image source={Foto.circle} style={styles.circle} />
                             <Image source={Foto.circle} style={styles.circle} />
-                            <Image source={Foto.circle} style={{ width: 40, height: 40 }} />
+                            <Image source={Foto.circle} style={styles.circle} />
                           </View>
                       </ScrollView>
                     </View>
@@ -121,33 +121,40 @@ export default class Sidebar extends Component {
                         ciduklah selagi bisa
                       </Text>
                       <ScrollView style={{ marginTop: 16, backgroundColor: '#EEEEEE' }}>
-                        <View style={{ alignItems: 'center' }}>
-                          <View style={{ padding: 20, alignItems: 'center' }}>
+                        <View>
+                          <View style={{ padding: 20, flexDirection: 'row', justifyContent: 'center'}}>
                             <Text style={{marginBottom: 12, fontSize: 20, color: 'black', }}>Kata-kata yang hari ini</Text>
+                            <Image source={Foto.button} style={styles.circle} />
+                            <Text>8 kata</Text>
                           </View>
                           <View style={{ marginVertical: 20, borderColor: '#BDBDBD', borderWidth: 1, width: '100%' }} />
-                          <View style={{ padding: 20, alignItems: 'center' }}>
-                            <Text style={{ fontWeight: '300', marginBottom: 12, fontSize: 20, color: 'black' }}>Kecepatan Menghafal</Text>
-                            <AnimatedCircularProgress
-                              size={120}
-                              width={15}
-                              fill={20}
-                              tintColor="#00e0ff"
-                              onAnimationComplete={() => console.log('onAnimationComplete')}
-                              backgroundColor="#3d5875"
-                            />
+                          <View style={{ padding: 20,flexDirection: 'row', justifyContent: 'center'}}>
+                            <Text style={{ fontWeight: '100', marginBottom: 12, fontSize: 20, color: 'black' }}>Level dan minat</Text>
+                            <Text>Diatas rata-rata, 5 topik</Text>
+                            <Image source={Foto.button} style={styles.circle} />
+                          </View>
+                          <View style={{ marginVertical: 20, borderColor: '#BDBDBD', borderWidth: 1, width: '100%' }} />
+                          <View style={{ padding: 20, flexDirection: 'row', justifyContent: 'center'}}>
+                            <Text style={{marginBottom: 12, fontSize: 20, color: 'black', }}>Tampilan semua kata-kataku</Text>
+                            <Image source={Foto.button} style={styles.circle} />
+                          </View>
+                          <View style={{ marginVertical: 20, borderColor: '#BDBDBD', borderWidth: 1, width: '100%' }} />
+                          <View style={{ padding: 20, flexDirection: 'row', justifyContent: 'center'}}>
+                            <Text style={{marginBottom: 12, fontSize: 20, color: 'black', }}>Hubungi Pengembang</Text>
+                            <Image source={Foto.button} style={styles.circle} />
+                          </View>
+                          <View style={{ marginVertical: 20, borderColor: '#BDBDBD', borderWidth: 1, width: '100%' }} />
+                          <View style={{ padding: 20, flexDirection: 'row', justifyContent: 'center'}}>
+                            <Text style={{marginBottom: 12, fontSize: 20, color: 'black', }}>Pengingat</Text>
+                            <Image source={Foto.button} style={styles.circle} />
+                          </View>
+                          <View style={{ marginVertical: 20, borderColor: '#BDBDBD', borderWidth: 1, width: '100%' }} />
+                          <View style={{ padding: 20, flexDirection: 'row', justifyContent: 'center'}}>
+                            <Text style={{marginBottom: 12, fontSize: 20, color: 'black', }}>Syarat Penggunaan</Text>
+                            <Image source={Foto.button} style={styles.circle} />
                           </View>
                           <View style={{ marginVertical: 20, borderColor: '#BDBDBD', borderWidth: 1, width: '100%' }} />
                         </View>
-                          <View style={{ justifyContent: 'center', flexDirection: 'row', paddingHorizontal: 8, paddingVertical: 8 }}>
-                            <Image source={Foto.circle} style={styles.circle} />
-                            <Image source={Foto.circle} style={styles.circle} />
-                            <Image source={Foto.circle} style={styles.circle} />
-                            <Image source={Foto.circle} style={styles.circle} />
-                            <Image source={Foto.circle} style={styles.circle} />
-                            <Image source={Foto.circle} style={styles.circle} />
-                            <Image source={Foto.circle} style={{ width: 40, height: 40 }} />
-                          </View>
                       </ScrollView>
                     </View>
                 </IndicatorViewPager>
