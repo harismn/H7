@@ -104,16 +104,51 @@ export default class Sidebar extends Component {
                         <Text> coba lagi </Text>
                         </TouchableOpacity>
                         <TouchableOpacity style={styles.button}
+                        onPress={() => this.props.navigation.navigate('voice')}>
+                        <Text> Voice </Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity style={styles.button}
                         onPress={() => this.props.navigation.navigate('vocab')}>
                         <Text> Vocab hari ini </Text>
                         </TouchableOpacity>
 
                     </View>
-                    <View style={{backgroundColor:'#1AA094'}}>
-                    <Image
-                    style={styles.image}
-                    source={Foto.right}
-                    />
+                    <View style={{backgroundColor:'white'}}>
+                    <Text style={{ fontSize: 20, color: '#42A5F5', textAlign: 'center' }}>
+                       Masa depan yang akan cerah akan datang :D
+                      </Text>
+                      <Text style={{ color: 'black', fontSize: 20, textAlign: 'center' }}>
+                        ciduklah selagi bisa
+                      </Text>
+                      <ScrollView style={{ marginTop: 16, backgroundColor: '#EEEEEE' }}>
+                        <View style={{ alignItems: 'center' }}>
+                          <View style={{ padding: 20, alignItems: 'center' }}>
+                            <Text style={{marginBottom: 12, fontSize: 20, color: 'black', }}>Kata-kata yang hari ini</Text>
+                          </View>
+                          <View style={{ marginVertical: 20, borderColor: '#BDBDBD', borderWidth: 1, width: '100%' }} />
+                          <View style={{ padding: 20, alignItems: 'center' }}>
+                            <Text style={{ fontWeight: '300', marginBottom: 12, fontSize: 20, color: 'black' }}>Kecepatan Menghafal</Text>
+                            <AnimatedCircularProgress
+                              size={120}
+                              width={15}
+                              fill={20}
+                              tintColor="#00e0ff"
+                              onAnimationComplete={() => console.log('onAnimationComplete')}
+                              backgroundColor="#3d5875"
+                            />
+                          </View>
+                          <View style={{ marginVertical: 20, borderColor: '#BDBDBD', borderWidth: 1, width: '100%' }} />
+                        </View>
+                          <View style={{ justifyContent: 'center', flexDirection: 'row', paddingHorizontal: 8, paddingVertical: 8 }}>
+                            <Image source={Foto.circle} style={styles.circle} />
+                            <Image source={Foto.circle} style={styles.circle} />
+                            <Image source={Foto.circle} style={styles.circle} />
+                            <Image source={Foto.circle} style={styles.circle} />
+                            <Image source={Foto.circle} style={styles.circle} />
+                            <Image source={Foto.circle} style={styles.circle} />
+                            <Image source={Foto.circle} style={{ width: 40, height: 40 }} />
+                          </View>
+                      </ScrollView>
                     </View>
                 </IndicatorViewPager>
               </View>

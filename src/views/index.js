@@ -4,7 +4,7 @@ import {
 createReduxBoundAddListener,
 createReactNavigationReduxMiddleware,
 } from 'react-navigation-redux-helpers'
-import { addNavigationHelpers, NavigationAction } from 'react-navigation'
+import { addNavigationHelpers, NavigationActions } from 'react-navigation'
 import { connect } from 'react-redux'
 import AppNavigator from './root-navigation'
 

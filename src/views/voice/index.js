@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {
   Platform,
   Text,
+  Button,
   View,
   Image,
   TouchableOpacity,
@@ -30,10 +31,14 @@ export default class Voice extends Component {
         placeholder="masukan teks di sini"
         placeholderTextColor= {Foto.black}
         />
-        <TouchableOpacity style={styles.buttons}
+        <TouchableOpacity style={styles.button}
         onPress={() => console.log('disini aja')}>
         <Text> Berikutnya </Text>
         </TouchableOpacity>
+        <Button
+          title="Go back"
+          onPress={() => this.props.navigation.goBack()}
+        />
       </View>
     );
   }
