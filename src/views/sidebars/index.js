@@ -47,7 +47,7 @@ export default class Sidebar extends Component {
                 >
                     <View style={{backgroundColor:'white'}}>
                       <Text style={{ fontSize: 60, color: '#42A5F5', textAlign: 'center' }}>
-                       8
+                       7
                       </Text>
                       <Text style={{ color: 'black', fontSize: 20, textAlign: 'center' }}>
                         kata sedang dipelajari
@@ -92,11 +92,20 @@ export default class Sidebar extends Component {
                     </View>
                     <View style={{backgroundColor:'cornflowerblue', justifyContent: 'center', alignItems: 'center'}}>
                         <Text style={styles.page2text}>
-                        disini text aja
+                         7 kata siap
                         </Text>
+                        <Text style={styles.page2text}> anda hapalkan </Text>
                         <TouchableOpacity style={styles.button}
                         onPress={() => this.props.navigation.navigate('textinput')}>
-                        <Text> kek aplikasi selanjutnya </Text>
+                        <Text> Mulai </Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity style={styles.button}
+                        onPress={() => this.props.navigation.navigate('tinder')}>
+                        <Text> coba lagi </Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity style={styles.button}
+                        onPress={() => this.props.navigation.navigate('vocab')}>
+                        <Text> Vocab hari ini </Text>
                         </TouchableOpacity>
 
                     </View>
@@ -126,8 +135,10 @@ const styles = StyleSheet.create({
       color: '#fff',
       fontSize: 30,
       fontWeight: 'bold',
+      marginBottom: 20,
     },
     button: {
+        marginTop: 30,
         alignItems: 'center',
         backgroundColor: 'orange',
         padding: 10,

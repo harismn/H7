@@ -1,9 +1,3 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
 import React, { Component } from 'react';
 import {
   Platform,
@@ -120,8 +114,8 @@ export default class Tinder extends Component {
               disableBottomSwipe
               verticalSwipe={false}
             >
-              <View style={{ height: 60, backgroundColor: Color.orange, alignItems: 'center', justifyContent: 'center' }}>
-                <Text style={{ color: Color.white, fontSize: 20, fontWeight: '500' }}>Improve your vocabulary</Text>
+              <View style={styles.views}>
+                <Text style={styles.textViews}>Improve your vocabulary</Text>
               </View>
             </Swiper>
           </View>
@@ -153,5 +147,16 @@ export default class Tinder extends Component {
         fontSize: 30,
         color: 'white',
         backgroundColor: 'transparent'
-      }
+      },
+      views: { 
+        height: 60, 
+        backgroundColor: Color.orange, 
+        alignItems: 'center', 
+        justifyContent: 'center'
+      },
+      textViews: { 
+        color: Color.white, 
+        fontSize: 20, 
+        fontWeight: '500' 
+      },
     })

@@ -21,7 +21,7 @@ export default class Content extends Component {
       <TouchableOpacity
       style={styles.button}
       onPress={() => this.props.navigation.navigate('swipes')}>
-         <Text> Login </Text>
+         <Text> Ciduk </Text>
        </TouchableOpacity>
       </View>
     );
