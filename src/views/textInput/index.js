@@ -77,7 +77,7 @@ export default class Card1 extends Component {
               placeholderTextColor="#EEEEEE"
             />
             <TouchableOpacity style={styles.button}
-            onPress={() => this.props.navigation.navigate('tinder')}>
+            onPress={() => this.props.navigation.navigate('isivocab')}>
             <Text> Berikutnya </Text>
             </TouchableOpacity>
           </View>

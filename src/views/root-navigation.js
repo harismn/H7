@@ -14,6 +14,7 @@ import Welcome from './welcome'
 import Vocab from './Vocab'
 import TextInput from './textInput'
 import Voice from './voice'
+import IsiVocab from './isivocab'
 // import styles from './swipes/style'
 
 
@@ -27,6 +28,13 @@ const AppNavigator = StackNavigator({
     },
     vocab: {
         screen: Vocab,
+        navigationOptions: {
+            headerStyle: styles.header,
+            header: null
+        }
+    },
+    isivocab: {
+        screen: IsiVocab,
         navigationOptions: {
             headerStyle: styles.header,
             header: null

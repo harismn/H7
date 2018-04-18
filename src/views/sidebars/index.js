@@ -15,6 +15,7 @@ import {
     PagerTitleIndicator,
     PagerDotIndicator,
 } from 'rn-viewpager';
+import { StackNavigator } from 'react-navigation'
 import Foto from '../../asets'
 // import PageOne from './pageOne'
 const { width } = Dimensions.get('window')
@@ -124,8 +125,11 @@ export default class Sidebar extends Component {
                         <View>
                           <View style={{ padding: 20, flexDirection: 'row', justifyContent: 'center'}}>
                             <Text style={{marginBottom: 12, fontSize: 20, color: 'black', }}>Kata-kata yang hari ini</Text>
-                            <Image source={Foto.button} style={styles.circle} />
-                            <Text>8 kata</Text>
+                            <TouchableOpacity
+                              onPress={() => this.props.navigation.navigate('isivocab')}>
+                                <Image source={Foto.button} style={styles.circle} />
+                              </TouchableOpacity>
+                            <Text>7 kata</Text>
                           </View>
                           <View style={{ marginVertical: 20, borderColor: '#BDBDBD', borderWidth: 1, width: '100%' }} />
                           <View style={{ padding: 20,flexDirection: 'row', justifyContent: 'center'}}>
